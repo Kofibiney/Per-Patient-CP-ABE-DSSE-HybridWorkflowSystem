@@ -1,0 +1,203 @@
+PS C:\Users\asied\Music\PhotoRec> 
+PS C:\Users\asied\Music\PhotoRec> ^C
+PS C:\Users\asied\Music\PhotoRec> cd 'c:\Users\asied\Music\PhotoRec'    
+PS C:\Users\asied\Music\PhotoRec> mkdir src\core src\entities src\utils tests
+mkdir : A positional 
+parameter cannot be     
+found that accepts      
+argument
+'src\entities'.
+At line:1 char:1        
++ mkdir src\core        
+src\entities src\utils  
+tests
++ ~~~~~~~~~~~~~~~~~~~~~ 
+~~~~~~~~~~~~~~~~~~~~~~  
+    + CategoryInfo      
+         : InvalidArg   
+  ument: (:) [mkdir]    
+ , ParameterBinding     
+Exception
+  ument: (:) [mkdir]  
+ , ParameterBinding   
+Exception
+    + FullyQualifiedEr
+   rorId : Positional 
+  ParameterNotFound,  
+ mkdir
+
+PS C:\Users\asied\Music\PhotoReccd 'c:\Users\asied\Music\PhotoRec'
+
+PS C:\Users\asied\Musi    c\PhotoRec> dir src\co    re src\entities
+dir : Could not find 
+a part of the path 'C 
+:\Users\asied\Music\P 
+hotoRec\src\core\src' 
+.
+At line:1 char:1      
++ dir src\core        
+src\entities
++ ~~~~~~~~~~~~~~~~~~~ 
+~~~~~~
+    + CategoryInfo    
+           : ReadEr   
+  ror: (C:\Users\a    
+ sied\Music\Photo     
+Rec\src\core:Str      
+ing) [Get-ChildI      
+tem], DirectoryN      
+otFoundException
+    + FullyQualified      
+   ErrorId : DirIOE       
+  rror,Microsoft.P        
+ owerShell.Comman
+ds.GetChildItemC
+ommand
+
+PS C:\Users\asied\Music\PhotoRec>     cd 'c:\Users\asied\Music\PhotoRec'      
+PS C:\Users\asied\MusiotoRec> New-Item -ItemType Directory -Force -Path HyNew-Item -ItemType Directory -Force -Path HyNew-Item -ItemItemType Directory -Force -Path HybridWorkflowSystem; Move-Item -Path src, simulation.py, detailed_evaluation.py, requirements.txt -Destination HybridWorkflowSystem
+
+
+
+    Directory: C:\Use 
+    rs\asied\Music\Ph 
+    otoRec
+
+
+Mode    LastWriteTime 
+----    ------------- 
+d-----   1/29/2026    
+              2:03 PM 
+
+
+PS C:\Users\asied\Music\PhotoRec> cd 'c:\Users\asied\Music\PhotoRec\HybridWorkflowSystem'
+PS C:\Users\asied\Music\PhotoRec\HybridWorkflowSystem> python simulation.py
+Traceback (most recent call last):
+  File "C:\Users\asied\Music\PhotoRec\Hybrid dWorkflowSystem\simulat tion.py", line 1, in <m module>
+    from src.entities.data_owner import Data aOwner
+  File "C:\Users\asied\Music\PhotoRec\Hybrid dWorkflowSystem\src\ent tities\data_owner.py",   line 1, in <module>   
+    from src.core.aes_provider import AESPro ovider
+\Music\PhotoRec\HybridWorkflowSystem\src\coraes_provider.py", line 1, in <module>       
+    from Crypto.Cipher import AES
+ModuleNotFoundError: No module named 'Crypto'
+PS C:\Users\asied\Music\PhotoRec\HybridWorkflowSyst^C>
+PS C:\Users\asied\Music\PhotoRec\HybridWorkflowSystem> cd 'c:\Users\asied\Music\PhotoRec\HybridWorkflowSystem'
+
+PS C:\Users\asied\Music\PhotoRec\HybridWorkflowSystem> pip install pycryptodome pandas numpy
+Defaulting to user installation because normal site-packages is not writeable
+Collecting pycryptodome
+  Downloading pycryptodome-3.23.0-cp37-abi3-win_amd64.whl.metadata (3.5 kB)
+Requirement already satisfied: pandas in c:\users\asied\appdata\roaming\python\python313\site-packages (2.2.3)
+Requirement already satisfied: numpy in c:\users\asied\appdata\roaming\python\python313\site-packages (2.2.4) 
+Requirement already satisfied: python-dateutil>=2.8.2 in c:\users\asied\appdata\roaming\python\python313\site-packages (from pandas) (2.9.0.post0)        
+Requirement already satisfied: pytz>=2020.1 in c:\users\asied\appdata\roaming\python\python313\site-packages (from pandas) (2025.2) 
+Requirement already satisfied: tzdata>=2022.7 in c:\users\asied\appdata\roaming\python\python313\site-packages (from pandas) (2025.2)
+Requirement already satisfied: six>=1.5 in c:\users\asied\appdata\roaming\python\python313\site-packages (from python-dateutil>=2.8.2->pandas) (1.17.0)   
+Downloading pycryptodome-3.23.0-cp37-abi3-win_amd64.whl (1.8 MB)  
+   ━━━ 1.… 1… eta 0:0…
+       MB  M…
+Installing collected packages: pycryptodome 
+Successfully installed pycryptodome-3.23.0  
+
+[notice] A new release of pip is available: 25.0.1 -> 25.3        
+[notice] To update, run: python.exe -m pip install --upgrade pip  
+PS C:\Users\asied\Music\PhotoRec\HybridWorkflowSystem> cd 'c:\Users\asied\Music\PhotoRec\HybridWorkflowSystem'
+
+PS C:\Users\asied\Music\PhotoRec\HybridWorkflowSystem> python simulation.py
+Traceback (most recent call last):
+  File "C:\Users\asied\Music\PhotoRec\HybridWorkflowSystem\simulation.py", line 1, in <module>
+    from src.entities.data_owner import DataOwner
+  File "C:\Users\asied\Music\PhotoRec\HybridWorkflowSystem\src\entities\data_owner.py", line 3, in <module>   
+    from src.core.abe_wrapper import CPABEProvider
+  File "C:\Users\asied\Music\PhotoRec\HybridWorkflowSystem\src\core\abe_wrapper.py", line 1, in <module>      
+    from charm.toolbox.pairinggroup import PairingGroup, GT       
+ModuleNotFoundError: No module named 'charm'
+PS C:\Users\asied\Music\PhotoRec\HybridWorkflowSystem> cd 'c:\Users\asied\Music\PhotoRec\HybridWorkflowSystem'
+
+PS C:\Users\asied\Music\PhotoRec\HybridWorkflowSystem> Rename-Item -Path src\core\abe_wrapper.py -NewName abe_wrapper_real.py
+PS C:\Users\asied\Music\PhotoRec\HybridWorkflowSystem> cd 'c:\Users\asied\Music\PhotoRec\HybridWorkflowSystem'
+
+PS C:\Users\asied\Music\PhotoRec\HybridWorkflowSystem> python simulation.py
+============================================================      
+      Designing a Workflow-Aware Fine-Grained
+      and Searchable Encryption Framework   
+============================================================      
+
+--- [Phase 1: System Setup] ---
+[DataOwner] Setting up CP-ABE system...     
+
+--- [Phase 2: User Key Generation] ---      
+[DataOwner] Generating Key for attributes: ['DOCTOR', 'CARDIOLOGY', 'HOSPITAL_A']       
+[DataOwner] Generating Key for attributes: ['NURSE', 'RADIOLOGY', 'HOSPITAL_A']
+
+--- [Phase 3: Data Encryption & Upload] --- 
+
+[DataOwner] Processing Record for Patient: PATIENT_001
+[DataOwner] Encrypting Key under Policy: ((DOCTOR and CARDIOLOGY) and HOSPITAL_A)       
+[CloudServer] Stored data for Patient ID: PATIENT_001
+[DataOwner] Upload Complete.
+Encryption Time: 0.2335 seconds
+
+--- [Phase 4: Simulation - Workflow Execution] ---
+
+[Test Case 1] Dr. Alice (Cardio) tries to search for 'Arrhythmia' 
+
+[User: Dr. Alice (Cardio)] Attempting to access Patient PATIENT_001...
+  -> [Success] Key decrypted! Access Granted.
+  -> Searching for keyword: 'arrhythmia'    
+[CloudServer] Keyword Match found for Patient PATIENT_001!        
+  -> [Search Hit] Setup found documents: ['main_record']
+Search Latency (Lookup + Search): 0.0004 seconds
+
+[Test Case 2] Dr. Alice (Cardio) decrypts the full record
+Decrypted Content Snippet:     Diagnosis: Hypertension, Arrhythmia
+
+[Test Case 3] Nurse Bob (Radio) tries to access the record        
+
+[User: Nurse Bob (Radio)] Attempting to access Patient PATIENT_001...
+  -> [Failure] Access Denied. CP-ABE Policy check failed. Decryption failed: Attributes do not satisfy policy (MOCK CHECK)
+PS C:\Users\asied\Music\PhotoRec\HybridWorkflowSystem> ^C
+PS C:\Users\asied\Music\PhotoRec\HybridWorkflowSystem> cd 'c:\Users\asied\Music\PhotoRec\HybridWorkflowSystem'
+
+PS C:\Users\asied\Music\PhotoRec\HybridWorkflowSystem> python detailed_evaluation.py
+============================================================      
+      PERFORMANCE EVALUATION: Secure EHR Framework
+============================================================      
+[DataOwner] Setting up CP-ABE system...     
+[DataOwner] Generating Key for attributes: ['DOCTOR', 'TEST']     
+
+Running benchmarks for 4 scenarios...       
+
+-> Scenario: Size=10KB, Keywords=10
+
+[DataOwner] Processing Record for Patient: PATIENT_10KB_10        
+[DataOwner] Encrypting Key under Policy: (DOCTOR and TEST)        
+[CloudServer] Stored data for Patient ID: PATIENT_10KB_10
+[DataOwner] Upload Complete.
+[CloudServer] Keyword Match found for Patient PATIENT_10KB_10!    
+-> Scenario: Size=100KB, Keywords=50        
+
+[DataOwner] Processing Record for Patient: PATIENT_100KB_50       
+[DataOwner] Encrypting Key under Policy: (DOCTOR and TEST)        
+[CloudServer] Stored data for Patient ID: PATIENT_100KB_50        
+[DataOwner] Upload Complete.
+[CloudServer] Keyword Match found for Patient PATIENT_100KB_50!   
+-> Scenario: Size=500KB, Keywords=200       
+
+[DataOwner] Processing Record for Patient: PATIENT_500KB_200      
+[DataOwner] Encrypting Key under Policy: (DOCTOR and TEST)        
+[CloudServer] Stored data for Patient ID: PATIENT_500KB_200       
+[DataOwner] Upload Complete.
+[CloudServer] Keyword Match found for Patient PATIENT_500KB_200!  
+-> Scenario: Size=1000KB, Keywords=500      
+
+[DataOwner] Processing Record for Patient: PATIENT_1000KB_500     
+[DataOwner] Encrypting Key under Policy: (DOCTOR and TEST)        
+[CloudServer] Stored data for Patient ID: PATIENT_1000KB_500      
+[DataOwner] Upload Complete.
+[CloudServer] Keyword Match found for Patient PATIENT_1000KB_500! 
+
+============================================================      
+  200          0.0124         0.0      0.0001
+             1000       500          0.0162         0.0      0.0001   
+PS C:\Users\asied\Music\PhotoRec\HybridWorkflowSystem>

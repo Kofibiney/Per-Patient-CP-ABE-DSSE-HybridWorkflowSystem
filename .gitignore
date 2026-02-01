@@ -1,0 +1,45 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+dist/
+build/
+
+# Datasets (large files)
+synthea/
+synthea-dataset-100/
+*.csv
+set100/
+
+# Generated files
+*.log
+*.png
+*.jpg
+*.jpeg
+diagnostic_data.*
+
+# Archives and old files
+archive/
+csv/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Docker
+.dockerignore
+
+# Temporary files
+*.tmp
+*.bak
+*.old

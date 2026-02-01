@@ -1,0 +1,4 @@
+charm-crypto>=0.50
+pycryptodome>=3.10.1
+numpy
+pandas
